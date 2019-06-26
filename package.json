@@ -1,6 +1,6 @@
 {
-  "homepage": "http://gingano.github.io/to_do_list",
-  "name": "to_do_list",
+  "homepage": "http://gingano.github.io/react_static_list/",
+  "name": "react_static_list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
