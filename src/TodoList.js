@@ -13,9 +13,9 @@ class TodoList extends React.Component {
   }
 
   chooseUser (item) {
-    let currentUser = item.id;
+    const userId = item.id;
     this.setState({
-      userId: currentUser
+      userId
     })
   };
 
@@ -25,7 +25,9 @@ class TodoList extends React.Component {
         <ul className='select-user'>
           {
             users.map((item) =>
-              <li>
+              <li
+                key={item.id}
+              >
                 <button
                   onClick={() => this.chooseUser(item)}
                 >
@@ -36,12 +38,10 @@ class TodoList extends React.Component {
           }
         </ul>
         <TodoItems
-          toggleStatus={this.toggleStatus}
-          remove={(index) => { this.remove(index) }}
-          state={this.state}
+            userId={this.state.userId}
         />
         <User
-          state={this.state}
+          userId={this.state.userId}
         />
       </div>
     )

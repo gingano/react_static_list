@@ -3,7 +3,7 @@ import todos from './api/todos'
 
 class TodoItems extends React.Component {
   render () {
-    let currentItems = todos.filter((element) => element.userId === this.props.state.userId)
+    const currentItems = todos.filter((element) => element.userId === this.props.userId)
 
     return (
       <ul className='theList'>
