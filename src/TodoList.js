@@ -13,9 +13,8 @@ class TodoList extends React.Component {
   }
 
   chooseUser (item) {
-    const userId = item.id;
     this.setState({
-      userId
+      userId: item.id
     })
   };
 

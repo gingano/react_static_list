@@ -1,12 +1,11 @@
 import React from 'react';
 import users from './api/users';
 
-class User extends React.Component {
-    render() {
-        const index = Number(this.props.userId);
+const User = ({userId}) => {
+        const index = Number(userId);
         return (
 
-         this.props.userId !== '' ?
+         userId !== '' ?
          <div className='user'>
              <h2>Information about user:</h2>
              <p>Name: {users[index - 1].name}</p>
@@ -22,7 +21,6 @@ class User extends React.Component {
             <p>There you will see information about selected user</p>
          </div>
         );
-    }
 }
 
 export default User;
