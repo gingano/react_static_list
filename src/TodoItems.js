@@ -1,5 +1,6 @@
 import React from 'react'
 import todos from './api/todos'
+import TodoItem from './TodoItem'
 
 class TodoItems extends React.Component {
   render () {
@@ -8,14 +9,7 @@ class TodoItems extends React.Component {
     return (
       <ul className='theList'>
         {
-          currentItems.map((item) =>
-            <li
-              key={item.id}
-            >
-              <button className={item.completed ? 'completed-true' : 'completed-false'}/>
-              <label>{item.title}</label>
-            </li>
-          )
+          currentItems.map((data) => <TodoItem item={data}/>)
         }
       </ul>
     )

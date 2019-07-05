@@ -18,7 +18,21 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
-.completed-false {
+.completed {
+  transition: 0.2s;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 5px;
+  top: 0;
+  background: url(./img/checked.svg) no-repeat !important;
+  cursor: pointer;
+  border: none;
+  margin: 10px 0;
+  outline: none;
+}
+
+.theList button {
   transition: 0.2s;
   height: 40px;
   width: 40px;
@@ -26,20 +40,6 @@ body {
   left: 5px;
   top: 0;
   background: url(./img/unchecked.svg) no-repeat;
-  cursor: pointer;
-  border: none;
-  margin: 10px 0;
-  outline: none;
-}
-
-.completed-true {
-  transition: 0.2s;
-  height: 40px;
-  width: 40px;
-  position: relative;
-  left: 5px;
-  top: 0;
-  background: url(./img/checked.svg) no-repeat;
   cursor: pointer;
   border: none;
   margin: 10px 0;
