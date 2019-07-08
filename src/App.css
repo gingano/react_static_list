@@ -32,7 +32,7 @@ body {
   outline: none;
 }
 
-.theList button {
+.listOfTodos button {
   transition: 0.2s;
   height: 40px;
   width: 40px;
@@ -74,14 +74,14 @@ body {
   background: #e3e3e3;
 }
 
-.theList {
+.listOfTodos {
   list-style-type: none;
   margin: 0;
   padding: 0;
   color: #000000;
 }
 
-.theList label {
+.listOfTodos label {
   word-break: break-all;
   padding: 15px 15px 15px 23px;
   line-height: 1.2;
@@ -90,7 +90,7 @@ body {
   top: -15px;
 }
 
-.theList li {
+.listOfTodos li {
   height: 60px;
   border: 1px solid #e3e3e3;
 }

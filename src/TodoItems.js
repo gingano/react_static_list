@@ -7,7 +7,7 @@ class TodoItems extends React.Component {
     const currentItems = todos.filter((element) => element.userId === this.props.userId)
 
     return (
-      <ul className='theList'>
+      <ul className='listOfTodos'>
         {
           currentItems.map((data) => <TodoItem item={data}/>)
         }
